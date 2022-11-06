@@ -7,8 +7,9 @@ export default class Character {
       this.level = 1;
       this.attack = attack;
       this.defence = defence;
+    } else {
+      throw new Error('Type not found');
     }
-    throw new Error('Type not found');
   }
 }
 
